@@ -56,7 +56,7 @@ namespace StudentDescription
                 Console.WriteLine("What date did the student graduate (MM/DD/YYYY)?");
                 var GetDate = Console.ReadLine();
 
-                DateTime UserDate = DateTime.ParseExact(GetDate, "d", DateTimeFormatInfo.InvariantInfo);/* ? $"graduated on {GradDate}" : "This is an invalid date";*/
+                DateTime UserDate = DateTime.ParseExact(GetDate, "d", DateTimeFormatInfo.InvariantInfo);
                 var GradDate = UserDate.ToString("d");
 
                 GradInfo += $"graduated on {GradDate}";
